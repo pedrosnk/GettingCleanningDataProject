@@ -64,14 +64,7 @@ Our final tiny data has the following values
 |Variable Name|Description|
 |---|---|
 subject| The id of the subject
-activity| <div>A string of the activity of the subject was doing 
-         "walking"
-         "walking_upstairs"
-         "walking_downstairs"
-         "sitting"
-         "standing"
-         "laying"
-         </div>
+activity| A string of the activity of the subject was doing `walking`, `walking_upstairs`,`walking_downstairs`, `sitting`, `standing`,`laying`
 tbodyaccmeanx| numeric value of the accelerometer
 tbodyaccmeany| numeric value of the accelerometer
 tbodyaccmeanz| numeric value of the accelerometer
