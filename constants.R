@@ -8,6 +8,7 @@ DATASET_DEST <- paste(DATA_DIR,'/dataset.zip', sep='')
 UNZIPED_DATASET_DIR <- paste(DATA_DIR, '/UCI HAR Dataset', sep='')
 
 FEATURES <- paste(UNZIPED_DATASET_DIR, '/features.txt', sep='')
+ACTIVITY_LABELS <- paste(UNZIPED_DATASET_DIR, '/activity_labels.txt', sep='')
 
 TRAINING_SET <- paste(UNZIPED_DATASET_DIR, '/train/X_train.txt', sep='')
 TEST_SET <- paste(UNZIPED_DATASET_DIR, '/test/X_test.txt', sep='')
