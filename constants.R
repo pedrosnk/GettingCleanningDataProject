@@ -22,4 +22,5 @@ TEST_LABELS <- paste(UNZIPED_DATASET_DIR, '/test/y_test.txt', sep='')
 TRAINING_SUBJECTS <- paste(UNZIPED_DATASET_DIR, '/train/subject_train.txt', sep='')
 TEST_SUBJECTS <- paste(UNZIPED_DATASET_DIR, '/test/subject_test.txt', sep='')
 
-
+AGGREGATION_FORMULA <- paste('. ~ ', SUBJECT_COLUMN_NAME, '+', ACTIVITY_COLUMN_NAME, sep='')
+FINAL_FILE_NAME <- 'activity_means.txt'

@@ -50,5 +50,11 @@ colnames(data_subjects) <- c(SUBJECT_COLUMN_NAME)
 # merge the subjects to the data set
 data_set <- cbind(data_set, data_subjects)
 
+# combine the data_set with aggrate by applying the mean function on every collumn grouped by subject + activity
+data_set <- aggregate(formula(AGGREGATION_FORMULA), data=data_set, FUN=mean)
+# now order to write on the file properly
+data_set <- data_set[ order(data_set[SUBJECT_COLUMN_NAME], data_set[ACTIVITY_COLUMN_NAME]), ]
 
+# write into file without row.names
+write.table(data_set, file=FINAL_FILE_NAME, row.names=FALSE)
 
