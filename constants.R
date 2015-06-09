@@ -2,6 +2,9 @@
 
 DATA_DIR <- 'data'
 
+ACTIVITY_COLUMN_NAME <- 'activity'
+SUBJECT_COLUMN_NAME <- 'subject'
+
 DATASET_URL <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
 DATASET_DEST <- paste(DATA_DIR,'/dataset.zip', sep='')
 
@@ -15,4 +18,8 @@ TEST_SET <- paste(UNZIPED_DATASET_DIR, '/test/X_test.txt', sep='')
 
 TRAINING_LABELS <- paste(UNZIPED_DATASET_DIR, '/train/y_train.txt', sep='')
 TEST_LABELS <- paste(UNZIPED_DATASET_DIR, '/test/y_test.txt', sep='')
+
+TRAINING_SUBJECTS <- paste(UNZIPED_DATASET_DIR, '/train/subject_train.txt', sep='')
+TEST_SUBJECTS <- paste(UNZIPED_DATASET_DIR, '/test/subject_test.txt', sep='')
+
 
