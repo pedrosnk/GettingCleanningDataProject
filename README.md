@@ -13,7 +13,7 @@ This project consists in creating a script called `run_analysis.R` that does the
 
 ## About the code
 
-This code is created using only base R libraries. No need to isntall any third party dependencies.
+This code is created using only base R libraries. No need to install any third party dependencies.
 This way is possible to ensure that the code will run fine across any plataform that has R.
 
 The structure of the code is the following
