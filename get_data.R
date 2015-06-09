@@ -5,7 +5,11 @@ if(!file.exists(DATA_DIR)){
 }
 
 if(!file.exists(DATASET_DEST)) {
-  download.file(DATASET_URL, destfile=DATASET_DEST, method='curl')
+  if(.Platform$OS.type == 'windows'){
+    download.file(DATASET_URL, destfile=DATASET_DEST)
+  } else {
+    download.file(DATASET_URL, destfile=DATASET_DEST, method='curl')
+  }
 }
 
 if(!file.exists(UNZIPED_DATASET_DIR)){
